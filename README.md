@@ -6,33 +6,8 @@ CloudWatch Logs.
 
 ## Architecture
 
-### Request flow :
-``` text
-                         Users / Internet
-                                |
-                                v
-                 External Application Load Balancer
-                              HTTP :80
-                                |
-                                v
-                   Web EC2 Auto Scaling Group
-                           Nginx :80
-                                |
-                                v
-                 Internal Application Load Balancer
-                              HTTP :80
-                                |
-                                v
-                    App EC2 Auto Scaling Group
-                       Node.js / Express :4000
-                                |
-                                v
-                         Amazon RDS MySQL
-                              TCP :3306
-```
-###  :
-
 ![AWS Three-Tier Architecture with terraform](architecture.html)
+
 
 
 ## AWS Services & Tools
@@ -133,16 +108,6 @@ terraform destroy
 **Warning:** Destroying resources can delete infrastructure and data.
 Verify the workspace and plan before confirming.
 
-## Interview Summary
-
-I deployed a three-tier Node.js application on AWS using Terraform. The
-external ALB routes traffic to Nginx web instances, which forward
-requests to an internal ALB. The internal ALB distributes traffic to
-Node.js application instances, which connect to Amazon RDS MySQL. I also
-configured CloudWatch logging and troubleshot load-balancer health
-checks, application services, and connectivity.
-
-------------------------------------------------------------------------
 
 **Note:** Confirm exact resource settings and log group names in the
 current Terraform configuration before publishing. Only claim features
