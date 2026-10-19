@@ -32,7 +32,7 @@ CloudWatch Logs.
 ```
 ###  :
 
-![AWS Three-Tier Architecture with terraform](architecture.png)
+![AWS Three-Tier Architecture with terraform](architecture.html)
 
 
 ## AWS Services & Tools
