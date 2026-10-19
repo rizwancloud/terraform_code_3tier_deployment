@@ -5,10 +5,7 @@ Auto Scaling, Application Load Balancers, Amazon RDS for MySQL, and
 CloudWatch Logs.
 
 ## Architecture
-
-[View the live animated architecture diagram](https://rizwancloud.github.io/terraform_code_3tier_deployment/architecture.html)
-
-
+![Architecture](architecture.svg)
 
 ## AWS Services & Tools
 
