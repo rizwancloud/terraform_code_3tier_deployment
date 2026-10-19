@@ -7,7 +7,7 @@ resource "aws_launch_template" "app" {
   instance_type          = var.instance_type
   vpc_security_group_ids = var.app-sg
   update_default_version = true
-  key_name               = "aws-key"
+  # key_name               = "aws-key"
 
   iam_instance_profile {
     name = var.cloudwatch
