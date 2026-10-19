@@ -6,7 +6,7 @@ CloudWatch Logs.
 
 ## Architecture
 
-![AWS Three-Tier Architecture with terraform](architecture.html)
+[View the live animated architecture diagram](https://rizwancloud.github.io/terraform_code_3tier_deployment/architecture.html)
 
 
 
